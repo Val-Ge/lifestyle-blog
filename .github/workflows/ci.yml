@@ -24,17 +24,17 @@ jobs:
       # Backend setup and test
       - name: Install backend dependencies
         run: npm install
-        working-directory: Inspire-Blog/Inspire-Blog
+        working-directory: Inspire-Blog
 
       - name: Run backend tests
         run: npm test
-        working-directory: Inspire-Blog/Inspire-Blog
+        working-directory: Inspire-Blog
 
       # Frontend setup and test
       - name: Install frontend dependencies
         run: npm install
-        working-directory: Inspire-Blog/client
+        working-directory: Inspire-Blog
 
       - name: Run frontend tests
         run: npm test
-        working-directory: Inspire-Blog/client
+        working-directory: Inspire-Blog
