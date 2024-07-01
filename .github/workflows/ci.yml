@@ -21,18 +21,20 @@ jobs:
         with:
           node-version: '14'
 
+      # Backend setup and test
       - name: Install backend dependencies
         run: npm install
-        working-directory: ./backend
+        working-directory: Inspire-Blog/Inspire-Blog
 
       - name: Run backend tests
         run: npm test
-        working-directory: ./backend
+        working-directory: Inspire-Blog/Inspire-Blog
 
+      # Frontend setup and test
       - name: Install frontend dependencies
         run: npm install
-        working-directory: ./frontend
+        working-directory: Inspire-Blog/client
 
       - name: Run frontend tests
         run: npm test
-        working-directory: ./frontend
+        working-directory: Inspire-Blog/client
